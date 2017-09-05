@@ -1,1 +1,0 @@
-Portfolio von Lars Mäder
