@@ -18,10 +18,30 @@
 }
 
 
-/** Base **/
+/** Colum **/
 
 #left-colum {
-    width: 100px;
-    color: aqua;
+    width: 249px;
+    background-color: #F8F8F8;
+    float: left;
+    height: 100vh;
+    border-right: 1px solid #A0A0A0;
+}
+
+#right-colum {
+    width: -webkit-calc(100% - 250px);
+    width:    -moz-calc(100% - 250px);
+    width:         calc(100% - 250px);
+    background-color: #FFFFFF;
+    float: left;
+    height: 100vh;
+    display: inline-block;
+}
+
+
+/** Font-Style **/
+
+ul {
+    list-style-position: inside;
 }
 
