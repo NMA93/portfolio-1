@@ -1,0 +1,97 @@
+/** Small Device Screen **/
+    
+    #left-colum {
+        width: 3%;
+    }
+
+    #middle-colum {
+        width: 94%;
+    }
+
+    #right-colum {
+        width: 3%;
+    }
+    
+
+/** Small to Medium Device Screen **/
+
+@media screen and (min-width: 570px) {
+    
+    /** Colum **/
+    
+    #left-colum {
+        width: 12.25%;
+    }
+
+    #middle-colum {
+        width: 75%;
+    }
+
+    #right-colum {
+        width: 12.25%;
+    }
+    
+}
+
+
+/** Medium to Large Device Screen **/
+
+@media screen and (min-width: 1024px) {
+    
+    /** Colum **/
+    
+    #left-colum {
+        width: 17.5%;
+    }
+
+    #middle-colum {
+        width: 65%;
+    }
+
+    #right-colum {
+        width: 17.5%;
+    }
+    
+}
+
+
+/** Large to XL Device Screen **/
+
+@media screen and (min-width: 1280px) {
+    
+    /** Colum **/
+    
+    #left-colum {
+        width: 20%;
+    }
+
+    #middle-colum {
+        width: 60%;
+    }
+
+    #right-colum {
+        width: 20%;
+    }
+    
+}
+
+
+/** Large to XXL Device Screen **/
+
+@media screen and (min-width: 1680px) {
+    
+    /** Colum **/
+    
+    #left-colum {
+        width: 25%;
+    }
+
+    #middle-colum {
+        width: 50%;
+    }
+
+    #right-colum {
+        width: 25%;
+    }
+    
+}
