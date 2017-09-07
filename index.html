@@ -3,7 +3,7 @@
     <head>
         
         <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,700" rel="stylesheet"> 
         <!-- End Google Font -->
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,10 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
       
         <title>Lars Mäder – Portfolio</title>
-        <meta NAME="description" content="Dokumentation von Lars Mäder über seinen Studiengang Interaction Designer 2017-2020" />
+        <meta NAME="description" content="Dokumentation von Lars Mäder über seinen Studiengang Interaction Designer 2017–2020" />
         <meta NAME="author" content="Lars Mäder" />
         <link rel="stylesheet" href="/portfolio/css/style.css">
+        <link rel="stylesheet" href="/portfolio/css/mediaqueries.css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
         <script type="text/javascript" src="/portfolio/js/navigation.js"></script>
@@ -21,22 +22,35 @@
     </head>
     <body>
         
-        <header></header>
-            <div id="background-header"></div>
+        <header>
+        <h1 class="heading-title bold">Dokumentation</h1>
+        <h2 class="heading-title-info">Studiengang Interaction Designer 2017&ndash;2020</h2>
+        <button class="open-menu">Open Menu</button>
+        <div class="navigation">
+            <div id="insert-nav"></div>
+        </div>
+        </header>
+        
+    <!-- Div for background heading color -->
+        <div id="background-header"></div>
+        
     <!-- Main starts here -->
             <main>
-                <div id="left-colum">
-                <nav id="insert-nav"></nav>
-                </div>
+                <div id="left-colum"></div>
             
-                <div id="right-colum">
-                <h1>Titel</h1>
+                <div id="middle-colum">
+                <h2>Titel</h2>
                 <p>Das ist ein Text</p>
                 <ul>
                 <li>Das ist eine Liste</li>
                 <li>Das ist eine Liste</li>
                 </ul>
                 </div>
+                
+                <div id="right-colum"></div>
+                
+    <!-- Clearfix -->
+                <div style="clear: both"></div>
 
     <!-- Main ends here -->
             </main>
