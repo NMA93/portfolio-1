@@ -1,32 +1,94 @@
-/** Start Reset **/
+/** Reset Browser Settings **/
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', 'Helvetica Neue', sans-serif;     
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;     
 }
 
 
-/** Selection **/
+/** Selection Color **/
 
 ::selection {
-    background: #ff6d6d; /* WebKit/Blink Browsers */
+    background: #e6f5ff; /** WebKit/Blink Browsers **/
     
 }
 ::-moz-selection {
-    background: #ff6d6d; /* Gecko Browsers */
+    background: #e6f5ff; /** Gecko Browsers **/
 }
 
+/** Main definitions **/
+
 body {
-    background-color: #f8f8f8;
+    background: #f8f8f8;
 }
+
+main {
+    display: block; /** Fallback for IE9-11 **/
+}
+
 
 /** Header **/
 
 header {
-    height: 60px;
+    height: auto;
     width: 100%;
 }
+
+.heading-title {
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 1px; 
+    line-height: 150%;
+    color: #333333;
+    margin: 10px 0px 0px 20px;
+}
+
+.heading-title-info {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px; 
+    line-height: 150%;
+    color: #333333;
+    margin: 00px 0px 10px 20px;
+}
+
+/** Navigation **/
+
+ul.navigation-list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button.open-menu {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: middle;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.open-menu.active, button.open-menu:hover {
+    background-color: #ddd;
+}
+
+div.navigation {
+    padding: 0px 0px 0px 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+} 
+
+
+/** Background heading color **/
 
 #background-header {
     width: 100%;
@@ -39,15 +101,17 @@ header {
 /** Colum **/
 
 #left-colum {
-    width: 220px;
     float: left;
-    margin: 50px 0px 0px 30px;
 }
 
-#right-colum {
-    width: -webkit-calc(90% - 250px);
+#left-colum:after {    
+    content: "\00a0 ";
+}
+
+#middle-colum {
+    /** width: -webkit-calc(90% - 250px);
     width:    -moz-calc(90% - 250px);
-    width:         calc(90% - 250px);
+    width:         calc(90% - 250px); **/
     background-color: #FFFFFF;
     float: left;
     height: 100vh;
@@ -60,10 +124,22 @@ header {
     box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.13);
 }
 
+#right-colum {
+    float: left;
+    display: inline-block;
+}
+
+#right-colum:after {    
+    content: "\00a0";
+}
+
 
 /** Font-Style **/
+
+.bold {
+    font-weight: 700;
+}
 
 ul {
     list-style-position: inside;
 }
-
