@@ -17,14 +17,12 @@
     background: #e6f5ff; /** Gecko Browsers **/
 }
 
-/** Main definitions **/
 
-body {
-    background: #f8f8f8;
-}
+/** Main definitions **/
 
 main {
     display: block; /** Fallback for IE9-11 **/
+    background: #f8f8f8;
 }
 
 
@@ -33,15 +31,16 @@ main {
 header {
     height: auto;
     width: 100%;
+    background: #FFFFFF;
 }
 
 .heading-title {
     font-size: 30px;
     font-weight: 100;
     letter-spacing: 1px; 
-    line-height: 150%;
-    color: #333333;
-    margin: 10px 0px 0px 20px;
+    line-height: 130%;
+    color: #3C3C3C;
+    margin: 25px 0px 0px 30px;
 }
 
 .heading-title-info {
@@ -49,19 +48,25 @@ header {
     font-weight: 100;
     letter-spacing: 1px; 
     line-height: 150%;
-    color: #333333;
-    margin: 00px 0px 10px 20px;
+    color: #3C3C3C;
+    margin: 0px 0px 30px 30px;
 }
 
 /** Navigation **/
 
-ul.navigation-list {
+#scroll {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0; 
+}
+
+ul.navigation-list { /** Style for extern navigation file ../html/nav.html **/
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-button.open-menu {
-    background-color: #eee;
+button.open-menu { /** Text in Button before opened **/
+    background-color: #FFFFFF;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -71,17 +76,31 @@ button.open-menu {
     font-weight: 300;
     color: #333333;
     border: none;
+    border-top: solid 1px #f8f8f8;
+    border-bottom: solid 1px #FFFFFF;
     outline: none;
     transition: 0.4s;
 }
 
-button.open-menu.active, button.open-menu:hover {
-    background-color: #ddd;
+button.open-menu:after { /** Text in Button when closed **/
+    content: "Open menu";
 }
 
-div.navigation {
+button.open-menu.active:after { /** Text in Button when opened **/
+    content: "Close menu";
+}
+
+button.open-menu:hover { /** Mouseover status **/
+    background: #f8f8f8;
+}
+
+button.open-menu.active { /** Activ status **/
+    border-bottom: solid 1px #f8f8f8;
+}
+
+div.navigation { /** Wrapper for navigation, which is loaded with js **/
     padding: 0px 0px 0px 20px;
-    background-color: white;
+    background-color: #FFFFFF;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
