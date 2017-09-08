@@ -7,11 +7,11 @@ var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].onclick = function() {
     this.classList.toggle("active");
-    var navigation = this.nextElementSibling;
-    if (navigation.style.maxHeight){
-      navigation.style.maxHeight = null;
+    var navigationouter = this.nextElementSibling;
+    if (navigationouter.style.maxHeight){
+      navigationouter.style.maxHeight = null;
     } else {
-      navigation.style.maxHeight = navigation.scrollHeight + "px";
+      navigationouter.style.maxHeight = navigationouter.scrollHeight + "px";
     }
   }
 }
