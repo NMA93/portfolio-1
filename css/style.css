@@ -54,18 +54,23 @@ header {
 
 /** Navigation **/
 
-#scroll {
-    position: -webkit-sticky; 
-    position: sticky;
-    top: 0; 
+.navigation-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #3C3C3C;
 }
 
-ul.navigation-list { /** Style for extern navigation file ../html/nav.html **/
-    margin-top: 50px;
-    margin-bottom: 50px;
+.navigation-list {
+    font-size: 12px;
+    font-weight: 300;
+    color: #3C3C3C;
 }
 
-button.open-menu { /** Text in Button before opened **/
+#navigationinner {
+    margin: 50px 0px 50px 20px;
+}
+
+button.open-menu { /** Button style **/
     background-color: #FFFFFF;
     color: #444;
     cursor: pointer;
@@ -83,11 +88,11 @@ button.open-menu { /** Text in Button before opened **/
 }
 
 button.open-menu:after { /** Text in Button when closed **/
-    content: "Open menu";
+    content: "Menu öffnen";
 }
 
 button.open-menu.active:after { /** Text in Button when opened **/
-    content: "Close menu";
+    content: "Menu schliessen";
 }
 
 button.open-menu:hover { /** Mouseover status **/
@@ -98,7 +103,7 @@ button.open-menu.active { /** Activ status **/
     border-bottom: solid 1px #f8f8f8;
 }
 
-div.navigation { /** Wrapper for navigation, which is loaded with js **/
+div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
     padding: 0px 0px 0px 20px;
     background-color: #FFFFFF;
     max-height: 0;
