@@ -54,6 +54,10 @@ header {
 
 /** Navigation **/
 
+#non-mobile-nav {
+    display: none;
+}
+
 .navigation-title {
     font-size: 12px;
     font-weight: 700;
@@ -121,7 +125,6 @@ div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
 }
 
 
-
 /** Colum **/
 
 #left-colum {
@@ -133,19 +136,31 @@ div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
 }
 
 #middle-colum {
-    /** width: -webkit-calc(90% - 250px);
-    width:    -moz-calc(90% - 250px);
-    width:         calc(90% - 250px); **/
     background-color: #FFFFFF;
     float: left;
-    height: 100vh;
     display: inline-block;
-    margin-top: -35vh;
+    height: auto;
+    margin-top: -25vh;
     margin-bottom: 100px;
     border-radius: 2px;
     -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.13);
     -moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.13);
     box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.13);
+    position: relative;
+}
+
+#middle-colum-inner:after {
+    position: absolute;
+    bottom: -30px;
+    content: "Lars Mäder © 2017";
+    margin-left: -50px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #c3c3c3;
+}
+
+#middle-colum-inner {
+    margin: 50px;
 }
 
 #right-colum {
@@ -160,10 +175,83 @@ div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
 
 /** Font-Style **/
 
+hr.article-line {
+    border: 0;
+    border-top: 1px solid #c3c3c3;
+    margin: 50px 0px 50px 0px;
+}
+
+hr.before-h2 {
+    margin-bottom: 40px;
+}
+
+.article-time {
+    color: #005F97;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #3C3C3C;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #3C3C3C;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 140%;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #005F97;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 140%;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+}
+
+h3.before-h4 {
+    padding-bottom: 10px;
+}
+
+h4 {
+    color: #3C3C3C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.4px;
+    margin-top: 20px;
+}
+
 .bold {
     font-weight: 700;
 }
 
+
 ul {
+    color: #3C3C3C;
     list-style-position: inside;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+    margin: 0px 0px 10px 0px;
+    padding: 0;
+    list-style: none;
+}
+
+ul li:before {
+    font-family: "FontAwesome";
+    content: "\f105";
+    margin-right: 5px;
+    color: #005F97;
 }
