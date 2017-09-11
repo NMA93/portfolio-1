@@ -54,8 +54,16 @@ header {
 
 /** Navigation **/
 
+
 #non-mobile-nav {
     display: none;
+    margin: 50px;
+}
+
+#non-mobile-nav.stick {
+    margin-top: 0;
+    position: fixed;
+    top: 50px;
 }
 
 .navigation-title {
@@ -174,6 +182,20 @@ div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
 
 
 /** Font-Style **/
+
+img.article-image {
+    width: 100%;
+    height: 200px;
+    background-color: #c3c3c3;
+    border-radius: 2px;
+    transition: 0.2s ease-out;
+    margin: 5px 0px 5px 0px;
+}
+
+img.article-image:hover {
+    opacity: 0.9;
+    filter: alpha opacity(=90); /** Fallback for IE8 and earlier **/
+}
 
 hr.article-line {
     border: 0;
