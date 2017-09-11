@@ -73,6 +73,12 @@
         width: 20%;
     }
     
+    /** Non Mobile Nav **/
+    
+    #non-mobile-nav {
+        display: block;
+    }
+    
 }
 
 
