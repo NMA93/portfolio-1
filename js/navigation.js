@@ -17,3 +17,14 @@ for (i = 0; i < acc.length; i++) {
 }
     
 });
+
+$(function(){
+
+    $('.side-nav a').click(function(){
+
+        $('.side-nav .side-nav-active').removeClass('side-nav-active'); // remove the class from the currently selected
+        $(this).addClass('side-nav-active'); // add the class to the newly clicked link
+
+    });
+
+});
