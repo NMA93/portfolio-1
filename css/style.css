@@ -61,9 +61,12 @@ header {
 }
 
 #non-mobile-nav.stick {
-    margin-top: 0;
+    margin-top: 0px;
     position: fixed;
     top: 50px;
+    width: calc(17.5% - 100px);
+    -webkit-width: calc(17.5% - 100px);
+    -moz-width: calc(17.5% - 100px);
 }
 
 .navigation-title {
@@ -164,7 +167,7 @@ div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
     margin-left: -50px;
     font-size: 12px;
     font-weight: 300;
-    color: #c3c3c3;
+    color: #C3C3C3;
 }
 
 #middle-colum-inner {
@@ -181,12 +184,12 @@ div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
 }
 
 
-/** Font-Style **/
+/** Article accessoire **/
 
 img.article-image {
     width: 100%;
     height: 200px;
-    background-color: #c3c3c3;
+    background-color: #C3C3C3;
     border-radius: 2px;
     transition: 0.2s ease-out;
     margin: 5px 0px 5px 0px;
@@ -199,7 +202,7 @@ img.article-image:hover {
 
 hr.article-line {
     border: 0;
-    border-top: 1px solid #c3c3c3;
+    border-top: 1px solid #C3C3C3;
     margin: 50px 0px 50px 0px;
 }
 
@@ -213,6 +216,9 @@ hr.before-h2 {
     font-weight: 700;
     margin-bottom: 8px;
 }
+
+
+/** Font-Style **/
 
 p {
     color: #3C3C3C;
@@ -275,5 +281,29 @@ ul li:before {
     font-family: "FontAwesome";
     content: "\f105";
     margin-right: 5px;
+    color: #005F97;
+}
+
+.side-nav-active {
+    color: #005F97 !important;
+}
+
+li.side-nav:before {
+    color: #C3C3C3;
+}
+
+li.side-nav {
+    margin: 0px 0px 10px 10px;
+    font-size: 13px;
+    line-height: 140%;
+    text-indent: -10px;
+}
+
+ul li a:link, ul li a:visited {
+    text-decoration: none;
+    color: #C3C3C3;
+}
+
+ul li a:hover, ul li a:active {
     color: #005F97;
 }
