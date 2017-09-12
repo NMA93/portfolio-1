@@ -78,6 +78,14 @@
     #non-mobile-nav {
         display: block;
     }
+        
+    /** Navigation **/
+
+    #non-mobile-nav.stick {
+        width: calc(20% - 100px);
+        -webkit-width: calc(20% - 100px);
+        -moz-width: calc(20% - 100px);
+    }
     
 }
 
@@ -98,6 +106,14 @@
 
     #right-colum {
         width: 25%;
+    }
+            
+    /** Navigation **/
+
+    #non-mobile-nav.stick {
+        width: calc(25% - 100px);
+        -webkit-width: calc(25% - 100px);
+        -moz-width: calc(25% - 100px);
     }
     
 }
