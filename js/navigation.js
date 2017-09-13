@@ -1,5 +1,5 @@
 $(function(){
-    $("#insert-nav").load("/portfolio/html/nav.html"); 
+    $("#insert-nav").load("/html/nav.html"); 
     
     var acc = document.getElementsByClassName("open-menu");
 var i;
