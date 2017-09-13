@@ -288,8 +288,14 @@ ul li:before {
     color: #005F97 !important;
 }
 
-li.side-nav:before {
+
+li.nav-color-grey:before {
     color: #C3C3C3;
+}
+
+
+li.nav-color-grey:hover:before {
+    color: #005F97;
 }
 
 li.side-nav {
