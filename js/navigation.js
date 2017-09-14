@@ -6,7 +6,7 @@ $(function(){
     $('.side-nav a').click(function(){
 
         $('.side-nav .side-nav-active').removeClass('side-nav-active nav-color-grey'); // remove the class from the currently selected
-        $(this).addClass('side-nav-active'); // add the class to the newly clicked link
+        $(this).addClass('side-nav-active li.nav-color-grey:before'); // add the class to the newly clicked link
 
     });
     
@@ -27,3 +27,5 @@ for (i = 0; i < acc.length; i++) {
 }
     
 });
+
+
