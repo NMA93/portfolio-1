@@ -307,20 +307,6 @@ ul li:before {
     color: #005F97;
 }
 
-.side-nav-active {
-    color: #005F97 !important;
-}
-
-
-li.nav-color-grey:before {
-    color: #C3C3C3;
-}
-
-
-li.nav-color-grey:hover:before {
-    color: #005F97;
-}
-
 li.side-nav {
     margin: 0px 0px 10px 10px;
     font-size: 13px;
@@ -328,11 +314,24 @@ li.side-nav {
     text-indent: -10px;
 }
 
-ul li a:link, ul li a:visited {
+li.side-nav:before {
+    color: #C3C3C3;
+}
+
+
+li.side-nav:hover:before {
+    color: #005F97;
+}
+
+.side-nav-active {
+    color: #005F97 !important;
+}
+
+a.nav-color:link, a.nav-color:visited {
     text-decoration: none;
     color: #C3C3C3;
 }
 
-ul li a:hover, ul li a:active {
+a.nav-color:hover, a.nav-color:active {
     color: #005F97;
 }
