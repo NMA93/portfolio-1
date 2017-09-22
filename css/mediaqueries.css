@@ -1,4 +1,8 @@
 /** Small Device Screen **/
+
+    html {
+        font-size: 80%;
+    }
     
     #left-colum {
         width: 3%;
@@ -11,7 +15,14 @@
     #right-colum {
         width: 3%;
     }
+
+    #middle-colum-inner {
+        margin: 30px;
+    }
     
+    #middle-colum-inner:after {
+        margin-left: -30px;
+    }
 
 /** Small to Medium Device Screen **/
 
@@ -38,6 +49,10 @@
 
 @media screen and (min-width: 1024px) {
     
+    html {
+        font-size: 100%;
+    }
+    
     /** Colum **/
     
     #left-colum {
@@ -50,6 +65,14 @@
 
     #right-colum {
         width: 17.5%;
+    }
+    
+    #middle-colum-inner {
+        margin: 50px;
+    }
+    
+    #middle-colum-inner:after {
+        margin-left: -50px;
     }
     
 }
