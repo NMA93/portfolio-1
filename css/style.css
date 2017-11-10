@@ -203,16 +203,17 @@ div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
 
 /** Article accessoire **/
 
-img.article-image {
+.article-image {
     width: 100%;
     height: 200px;
     background-color: #C3C3C3;
     border-radius: 2px;
     transition: 0.2s ease-out;
-    margin: 5px 0px 5px 0px;
+    margin: 20px 0px 20px 0px;
+    overflow: hidden;
 }
 
-img.article-image:hover {
+.article-image:hover {
     opacity: 0.9;
     filter: alpha opacity(=90); /** Fallback for IE8 and earlier **/
 }
