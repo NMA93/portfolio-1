@@ -99,7 +99,7 @@
     /** Non Mobile Nav **/
     
     #non-mobile-nav {
-        display: block;
+        left: 0px;
     }
         
     /** Navigation **/

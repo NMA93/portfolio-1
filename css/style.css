@@ -56,8 +56,13 @@ header {
 
 
 #non-mobile-nav {
-    display: none;
+    position: absolute;
+    left: -400px;
     margin: 50px;
+    -webkit-transition: 800ms, opacity 800ms cubic-bezier(1, 0, 0, 1) 0ms; /* For Safari 3.1 to 6.0, Chrome 4.0 to 26.0 */
+    -moz-transition: 800ms, opacity 800ms cubic-bezier(1, 0, 0, 1) 0ms; /* For Mozilla 4.0 to 16.0 */
+    -o-transition: 800ms, opacity 800ms cubic-bezier(1, 0, 0, 1) 0ms; /* For Opera 10.5 to 12.1 */
+    transition: 800ms, opacity 800ms cubic-bezier(1, 0, 0, 1) 0ms;
 }
 
 #non-mobile-nav.stick {
