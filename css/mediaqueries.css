@@ -24,6 +24,10 @@
         margin-left: -30px;
     }
 
+    .article-image {
+        height: auto;
+    }  
+
 /** Small to Medium Device Screen **/
 
 @media screen and (min-width: 570px) {
@@ -42,6 +46,9 @@
         width: 12.25%;
     }
     
+    .article-image {
+        height: 200px;
+    } 
 }
 
 

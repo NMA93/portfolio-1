@@ -210,8 +210,6 @@ div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
 
 .article-image {
     width: 100%;
-    height: 200px;
-    background-color: #C3C3C3;
     border-radius: 2px;
     transition: 0.2s ease-out;
     margin: 20px 0px 20px 0px;
@@ -219,8 +217,11 @@ div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
 }
 
 .article-image:hover {
-    opacity: 0.9;
+    opacity: 0.8;
     filter: alpha opacity(=90); /** Fallback for IE8 and earlier **/
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.25);
 }
 
 hr.article-line {
@@ -287,6 +288,9 @@ h4 {
     font-weight: 700;
 }
 
+.blue-f {
+    color: #005F97 !important;
+}
 
 ul {
     color: #3C3C3C;
@@ -325,6 +329,15 @@ li.side-nav:hover:before {
 
 .side-nav-active {
     color: #005F97 !important;
+}
+
+a.download-link {
+    text-decoration: none;
+    color: #3C3C3C;
+}
+
+a.download-link:hover {
+    color: #005F97;
 }
 
 a.nav-color:link, a.nav-color:visited {
