@@ -241,6 +241,12 @@ hr.before-h2 {
     margin-bottom: 8px;
 }
 
+#line-blue {
+    height: 5px; 
+    background-color: #005F97; 
+    border-radius: 0px 0px 2px 2px;
+}
+
 
 /** Font-Style **/
 
