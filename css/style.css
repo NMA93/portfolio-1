@@ -84,74 +84,6 @@ header {
     color: #3C3C3C;
 }
 
-#navigationinner {
-    margin: 3.125rem 0rem 3.125rem 1.25rem;
-}
-
-button.open-menu { /** Button style **/
-    background-color: #FFFFFF;
-    color: #444;
-    cursor: pointer;
-    padding: 21px 0px 17px 0px;
-    width: 100%;
-    text-align: middle;
-    font-size: 19px;
-    font-weight: 300;
-    color: #3C3C3C;
-    border: none;
-    border-top: solid 1px #f8f8f8;
-    border-bottom: solid 1px #FFFFFF;
-    outline: none;
-    transition: 0.4s;
-    -o-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -webkit-transition: 0.4s;
-}
-
-button.open-menu:after { /** Text in Button when closed **/
-    font-family: "FontAwesome";
-    content: "\f00d";
-    display: inline-block;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -o-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -webkit-transition: 0.4s;
-}
-
-button.open-menu.active:after { /** Text in Button when opened **/
-    font-family: "FontAwesome";
-    content: "\f00d";
-    display: inline-block;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-    -o-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -webkit-transition: 0.4s;
-}
-
-button.open-menu:hover { /** Mouseover status **/
-    background: #f8f8f8;
-}
-
-button.open-menu.active { /** Activ status **/
-    border-bottom: solid 1px #f8f8f8;
-}
-
-div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
-    padding: 0px 0px 0px 20px;
-    background-color: #FFFFFF;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-} 
-
 
 /** Background heading color **/
 
@@ -189,7 +121,7 @@ div.navigationouter { /** Wrapper for navigation, which is loaded with js **/
 #middle-colum-inner:after {
     position: absolute;
     bottom: -30px;
-    content: "Lars Mäder © 2017";
+    content: "Lars Mäder © 2018";
     margin-left: -50px;
     font-size: 0.75rem;
     font-weight: 300;
@@ -230,6 +162,23 @@ hr.article-line {
     margin: 3.125rem 0rem 3.125rem 0rem;
 }
 
+hr.article-line-unterricht {
+    border: 0;
+    border-top: 1px solid #C3C3C3;
+    margin: 3.125rem 0rem 0rem 0rem;
+}
+
+#unterricht {
+    width: calc(100%-0.35rem);
+    background-color: #005F97;
+    margin: 3.125rem 0rem 0.5rem 0rem;
+    font-size: 12px;
+    letter-spacing: 0.03125rem;
+    color: #FFFFFF;
+    padding: 0.35rem 0rem 0.35rem 0.35rem;
+    border-radius: 2px 2px 2px 2px;
+}
+
 hr.before-h2 {
     margin-bottom: 3.125rem;
 }
@@ -257,6 +206,10 @@ p {
     line-height: 1.4;
     letter-spacing: 0.03125rem;
     margin-bottom: 0.625rem;
+}
+
+.before-ul {
+    margin-bottom: 0rem !important;
 }
 
 h2 {
@@ -322,6 +275,11 @@ li.side-nav {
     font-size: 0.8125rem;
     line-height: 1.4;
     text-indent: -0.625rem;
+}
+
+.text-indent {
+    margin-left: 0.75rem;
+    text-indent: -0.75rem;
 }
 
 li.side-nav:before {

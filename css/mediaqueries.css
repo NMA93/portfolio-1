@@ -32,6 +32,10 @@
 
 @media screen and (min-width: 570px) {
     
+    html {
+        font-size: 100%;
+    }
+    
     /** Colum **/
     
     #left-colum {
